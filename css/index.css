@@ -56,13 +56,17 @@ a,li,ul,p,span,h1,h2{
     -webkit-box-pack:justify;
     background: #fff;
 }
-.nav>div{
+.nav>div {
     width:1rem;
     height:100%;
     text-align: center;
     line-height: 0.97rem;
     color: #FF4258;
     font-size: 0.25rem;
+}
+.nav>div a{
+    color: #FF4258;
+    text-decoration: none;
 }
 .nav>div:hover{
     border-bottom: 0.01rem solid #FF4258;
