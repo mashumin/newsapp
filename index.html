@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="x5-orientation" content="portrait" /> 
+	<meta name="screen-orientation" content="portrait">
+	<meta name="format-detection" content="telephone=no, email=no" />
     <title>新闻app</title>
-
-    <script scr="js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/swiper.jquery.min.js"></script>
-    <script src="js/swiper.animate1.0.2.min.js"></script>
-    <script src="js/swiper.min.js"></script>
     <script scr="js/index.js"></script>
     <link rel="stylesheet" href="css/swiper.min.css" />
-    <link rel="stylesheet" href="css/animate.min.css">
+    
     <link rel="stylesheet" href="css/font/iconfont.css">
     <link rel="stylesheet" href="css/index.css"/>
 </head>
@@ -19,18 +20,44 @@
 <div class="swiper-container waimian">
     <div class="titles">
      <div class="title">
-            <div class="iconfont icon-geren"></div>
-            <div class="iconfont icon-news"></div>
-            <div class="iconfont icon-yemianzuoshangjiaocaidanbiao"></div>
+            <div><div class="iconfont icon-geren"></div></div>
+            <div><div class="iconfont icon-news"></div></div>
+            <div><div class="iconfont icon-yemianzuoshangjiaocaidanbiao caid"> </div>
+            	<div class="guan">
+	            	 <div class="close"></div>
+	            	 <div class="closes"></div>
+            	 </div>
+            </div>
+          
      </div>
      <div class="nav">
-            <div><a href="">推荐</a></div>
+            <div><a href="index.html">推荐</a></div>
             <div><a href="list.html">国内</a></div>
             <div><a href="">国外</a></div>
             <div><a href="">娱乐</a></div>
             <div><a href="">体育</a></div>
             <div><a href="">财经</a></div>
         </div>
+</div>
+<div class="xiala">
+    <ul>
+        <li><a href=""><div class="iconfont icon-tuijianfuzhi"></div>推荐</a></li>
+        <li><a href=""><div class="iconfont icon-guonei"></div>国内</a></li>
+        <li><a href=""><div class="iconfont icon-guowai"></div>国外</a></li>
+        <li><a href=""><div class="iconfont icon-yule"></div>娱乐</a></li>
+        <li><a href=""><div class="iconfont icon-tiyu"></div>体育</a></li>
+        <li><a href=""><div class="iconfont icon-jingfenicon24"></div>财经</a></li>
+        <li><a href=""><div class="iconfont icon-icon030"></div>汽车</a></li>
+        <li><a href=""><div class="iconfont icon-junshi01"></div>军事</a></li>
+        <li><a href=""><div class="iconfont icon-dujia"></div>独家</a></li>
+        <li><a href=""><div class="iconfont icon-0guojihangkong3"></div>航空</a></li>
+        <li><a href=""><div class="iconfont icon-lvyou"></div>旅游</a></li>
+        <li><a href=""><div class="iconfont icon-icon"></div>彩票</a></li>
+    </ul>
+    <div class="sousuo">
+    	<input type="search"  placeholder="请输入关键字" name="search"/>
+    	<input type="submit"  value="提交" name="but"/>
+    </div>
 </div>
     <div class="swiper-wrapper">
         <div class="swiper-slide bj">
@@ -74,74 +101,6 @@
                 </div>
             </div>
         </div>
-        <!--<div class="swiper-slide bj">-->
-            <!--&lt;!&ndash;<div class="warp">&ndash;&gt;-->
-                <!--<h1 class="title1">历史新闻</h1>-->
-                <!--&lt;!&ndash;<h2>更多</h2>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--<div class="newsbox">-->
-                <!--<div class="imgbox gn1"></div>-->
-                <!--<div class="red">-->
-                    <!--<a href="">民国军人为什么吃空缺?哪位国军将领最善于搞钱</a>-->
-                    <!--<div class="iconfont icon-f1"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="newsbox">-->
-                <!--<div class="imgbox gn2"></div>-->
-                <!--<div class="red">-->
-                    <!--<a href="">海上丝绸之路:中国式的古典全球化时代</a>-->
-                    <!--<div class="iconfont icon-f1"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="newsbox">-->
-                <!--<div class="imgbox gn3"></div>-->
-                <!--<div class="red">-->
-                    <!--<a href="">"废经"VS"卫经":宣统三年的读经"攻防战"</a>-->
-                    <!--<div class="iconfont icon-f1"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="newsbox">-->
-                <!--<div class="imgbox gn4"></div>-->
-                <!--<div class="red">-->
-                    <!--<a href="">被误解和遗忘的中国火器:与火药同时传播至西方</a>-->
-                    <!--<div class="iconfont icon-f1"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<h1>社会新闻</h1>-->
-            <!--<div class="newsbox">-->
-                <!--<div class="imgbox gn5"></div>-->
-                <!--<div class="red">-->
-                    <!--<a href="">男子肇事后在家切腹自杀 给女友打电话告别</a>-->
-                    <!--<div class="iconfont icon-f1"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="newsbox">-->
-                <!--<div class="imgbox gn6"></div>-->
-                <!--<div class="red">-->
-                    <!--<a href="">罗尔回应"带血营销":我作为文人 写作是没有错的</a>-->
-                    <!--<div class="iconfont icon-f1"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="newsbox">-->
-                <!--<div class="imgbox gn7"></div>-->
-                <!--<div class="red">-->
-                    <!--<a href="">护理院设"奖孝金":多探望父母可领钱 探望者暴增</a>-->
-                    <!--<div class="iconfont icon-f1"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="swiper-slide bj">-->
-            <!--<div class="xiangq">-->
-                <!--<div class="fanhui">-->
-                    <!--<div class="iconfont icon-fanhui"></div>-->
-                <!--</div>-->
-                <!--<div class="xiangcun"></div>-->
-                <!--<div class="neirong">-->
-                    <!--<h3>乡村教师守护小学32年 如今学校只剩5个娃</h3>-->
-                    <!--<p>雷士进今年57岁，1984年，他来到安徽省亳州市谯城区十九里镇姜屯行政村的姜屯小学当起了一名乡村教师。“学校最高峰的时候发展到500多人，可现在只有5个学生，4位老师。”雷士进说，由于城市发展，现在的姜屯地处城乡结合处，大多数人都进城务工，顺道也会带孩子外出读书，还有一部分会选择把孩子送进私立学校，所以导致学生数量锐减。（来源：亳州新报）</p>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
     </div>
 </div>
 </body>
@@ -159,7 +118,18 @@
 
     }
     window.onload=function(){
-        size(750)
+        size(750);
+        
+        $(".caid").click(function(){
+        	$(this).css("display","none");
+        	$(".guan").css("display","block");
+        	$(".xiala").css("display","block")
+        })
+        $(".guan").click(function(){
+        	$(".caid").css("display","block");
+        	$(".guan").css("display","none");
+        	$(".xiala").css("display","none")
+        })
     }
     var mySwiper = new Swiper ('.swiper-container', {
         pagination: '.swiper-pagination',

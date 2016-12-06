@@ -8,6 +8,42 @@ a,li,ul,p,span,h1,h2{
     padding: 0;margin: 0;list-style: none;
 }
 
+a{
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body{font-family:Helvetica;}
+
+.xiala{
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.1);
+	margin-top: 2rem;
+
+	-webkit-transition: all 2s;
+	display: none;
+}
+.xiala ul{
+	padding: 0.35rem;
+	padding-left: 1.3rem;
+}
+.xiala li{
+	padding: 0.2rem;
+	text-align: center;
+	float: left;
+	font-size: 0.3rem;
+	padding-right: 0.5rem;
+}
+.xiala li .iconfont{
+	color: #999;
+	font-size: 0.6rem;
+}
+.xiala a{
+	color: #333;
+}
+.sousuo{
+	padding-left: 1.3rem;
+}
 .waimian{
     width:100%;
     height:100%;
@@ -35,6 +71,35 @@ a,li,ul,p,span,h1,h2{
     width:33.33%;
     height:100%;
 }
+.close{
+	width: 0.5rem;
+	height: 0.03rem;
+	background: #fff;
+	margin: auto;
+	margin-top: 0.42rem;
+	transform-origin: center center;
+	-webkit-transform-origin: center center;
+	transform: rotate(45deg) translateY(0.15rem); 
+	-webkit-transform: rotate(45deg) translateY(0.15rem)
+}
+.closes{
+	width: 0.5rem;
+	height: 0.03rem;
+	background: #fff;
+	margin: auto;
+	margin-top: 0.2rem;
+	transform-origin: center center;
+	-webkit-transform-origin: center center;
+	transform: rotate(45deg) translateY(-0.15rem); 
+	-webkit-transform: rotate(-45deg) translateY(-0.15rem);
+
+}
+/*.caid{
+	display: none;
+}*/
+.guan{
+	display: none;
+}
 .bj{
     overflow-y: auto;
 }
@@ -44,7 +109,7 @@ a,li,ul,p,span,h1,h2{
     color: #fff;
     text-align: center;
 }
-.iconfont:nth-of-type(2){
+.icon-news{
     font-size: 0.9rem;
 }
 .nav{
@@ -113,7 +178,7 @@ a,li,ul,p,span,h1,h2{
     width:6.54rem;
     height:1.82rem;
     margin: 0 auto;
-   border-bottom: 0.01rem solid #999;
+    border-bottom: 0.01rem solid #999;
 }
 .imgbox{
     width:2.2rem;
