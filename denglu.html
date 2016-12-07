@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/denglu.css" />
+</head>
+<body>
+	
+<div class="box">
+	<div class="zhao">
+		<div class="login">
+			<div class="yuan"></div>
+			<h1>请登录</h1>
+			<form action="">
+				<div class="name">用户名：<input type="text" placeholder="请输入用户名" /></div>
+				<div class="pass">密码：<input type="password" /></div>
+				<div class="tij">
+					<input type="submit" value="登录" class="log"/>
+					<input type="submit" value="注册"/>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+</body>
+<script>
+    function size(origin,type){
+        var type=type || "x";
+        if(type=="x"){
+            var widths=document.documentElement.clientWidth;
+            var sizes=widths/origin*100;
+        }else if(type=="y"){
+            var heights=document.documentElement.clientHeight;
+            var sizes=heights/origin*100;
+        }
+        document.getElementsByTagName("html")[0].style.fontSize=sizes+"px";
+
+    }
+    window.onload=function() {
+        size(1334,"y");
+    }
+</script>
+</html>

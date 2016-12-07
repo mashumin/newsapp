@@ -1,109 +1,44 @@
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="format-detection" content="telephone=no, email=no" />
-    <meta name="x5-orientation" content="portrait" /> 
-	<meta name="screen-orientation" content="portrait">
-	<meta name="format-detection" content="telephone=no, email=no" />
-    <title>新闻app</title>
-    <script src="js/jquery.js"></script>
-    <script src="js/swiper.jquery.min.js"></script>
-    <script scr="js/index.js"></script>
+    <title></title>
+
     <link rel="stylesheet" href="css/swiper.min.css" />
-    
-    <link rel="stylesheet" href="css/font/iconfont.css">
-    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/sp.css" />
 </head>
+<script scr="js/jquery.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/swiper.animate1.0.2.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script scr="js/index.js"></script>
 <body>
-<div class="swiper-container waimian">
-    <div class="titles">
-     <div class="title">
-            <div><div class="iconfont icon-geren"></div></div>
-            <div><div class="iconfont icon-news"></div></div>
-            <div><div class="iconfont icon-yemianzuoshangjiaocaidanbiao caid"> </div>
-            	<div class="guan">
-	            	 <div class="close"></div>
-	            	 <div class="closes"></div>
-            	 </div>
-            </div>
-          
-     </div>
-     <div class="nav">
-            <div><a href="index.html">推荐</a></div>
-            <div><a href="list.html">国内</a></div>
-            <div><a href="">国外</a></div>
-            <div><a href="">娱乐</a></div>
-            <div><a href="">体育</a></div>
-            <div><a href="">财经</a></div>
-        </div>
-</div>
-<div class="xiala">
-    <ul>
-        <li><a href=""><div class="iconfont icon-tuijianfuzhi"></div>推荐</a></li>
-        <li><a href=""><div class="iconfont icon-guonei"></div>国内</a></li>
-        <li><a href=""><div class="iconfont icon-guowai"></div>国外</a></li>
-        <li><a href=""><div class="iconfont icon-yule"></div>娱乐</a></li>
-        <li><a href=""><div class="iconfont icon-tiyu"></div>体育</a></li>
-        <li><a href=""><div class="iconfont icon-jingfenicon24"></div>财经</a></li>
-        <li><a href=""><div class="iconfont icon-icon030"></div>汽车</a></li>
-        <li><a href=""><div class="iconfont icon-junshi01"></div>军事</a></li>
-        <li><a href=""><div class="iconfont icon-dujia"></div>独家</a></li>
-        <li><a href=""><div class="iconfont icon-0guojihangkong3"></div>航空</a></li>
-        <li><a href=""><div class="iconfont icon-lvyou"></div>旅游</a></li>
-        <li><a href=""><div class="iconfont icon-icon"></div>彩票</a></li>
-    </ul>
-    <div class="sousuo">
-    	<input type="search"  placeholder="请输入关键字" name="search"/>
-    	<input type="submit"  value="提交" name="but"/>
-    </div>
-</div>
+<div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide bj">
-            <div class="swiper-container banner">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide nanning">
-                        <p>南宁60岁老人“叱咤”情场 劈腿三女友骗25万</p>
-                    </div>
-                    <div class="swiper-slide lang">
-                        <p>[影迹]狼王加内特:浪漫的实用主义者</p>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <div class="newsbox">
-                <div class="imgbox"></div>
-                <div class="red">
-                    <a href="">朴槿惠就任总统后 购衣费用超7亿韩元</a>
-                    <div class="iconfont icon-f1"></div>
-                </div>
-            </div>
-            <div class="newsbox">
-                <div class="imgbox jg"></div>
-                <div class="red">
-                    <a href="">85岁济公还在演戏：人生在世总要留点什么。</a>
-                    <div class="iconfont icon-f1"></div>
-                </div>
-            </div>
-            <div class="newsbox">
-                <div class="imgbox bx"></div>
-                <div class="red">
-                    <a href="">巴西举行空难遇难者遗体告别仪式</a>
-                    <div class="iconfont icon-f1"></div>
-                </div>
-            </div>
-            <div class="newsbox">
-                <div class="imgbox jl"></div>
-                <div class="red">
-                    <a href="">男子称拘留时被民警殴打致脑萎缩 警方:正在调查</a>
-                    <div class="iconfont icon-f1"></div>
-                </div>
-            </div>
+        <div class="swiper-slide shan">
+            <p class="news ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">最新的咨询</p>
+            <p class="xiao ani" swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">全新的视觉</p>
+            <div class="xue ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="2s" swiper-animate-delay="0s"></div>
+        </div>
+        <div class="swiper-slide shan">
+            <p class="hong ani" swiper-animate-effect="tada" swiper-animate-duration="2s" swiper-animate-delay="0.3s">HOT</p>
+            <p class="lan ani" swiper-animate-effect="rubberBand" swiper-animate-duration="2s" swiper-animate-delay="0.5s">NEWS</p>
+            <div class="xue2 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="2s" swiper-animate-delay="2s"></div>
+            <span class="yue xiao ani tim" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="1s">实时搜索新闻</span>
+        </div>
+        <div class="swiper-slide shan">
+            <div class="imgbox xiao ani" swiper-animate-effect="swing" swiper-animate-duration="1s" swiper-animate-delay="0.3s"></div>
+            <span class="youn xiao ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">天下新闻我知道</span>
+            <!--<span class="yue xiao ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="1s">乐享音乐带你享受视觉盛宴</span>-->
+            <div class="long ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+                <a href="denglu.html">点击进入</a></div>
         </div>
     </div>
+    <div class="swiper-pagination"></div>
 </div>
-</body>
 <script>
     function size(origin,type){
         var type=type || "x";
@@ -117,22 +52,21 @@
         document.getElementsByTagName("html")[0].style.fontSize=sizes+"px";
 
     }
-    window.onload=function(){
-        size(750);
-        
-        $(".caid").click(function(){
-        	$(this).css("display","none");
-        	$(".guan").css("display","block");
-        	$(".xiala").css("display","block")
-        })
-        $(".guan").click(function(){
-        	$(".caid").css("display","block");
-        	$(".guan").css("display","none");
-        	$(".xiala").css("display","none")
-        })
+    window.onload=function() {
+        size(1334,"y");
     }
     var mySwiper = new Swiper ('.swiper-container', {
         pagination: '.swiper-pagination',
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(swiper); //隐藏动画元素
+            swiperAnimate(swiper); //初始化完成开始动画
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+        }
+
     })
 </script>
+</body>
+
 </html>

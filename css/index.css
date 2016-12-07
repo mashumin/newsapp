@@ -138,7 +138,11 @@ body{font-family:Helvetica;}
 }
 .nav>div:nth-of-type(1){
     margin-left:0.1rem;
-    border-bottom:0.01rem solid #FF4258;
+    
+}
+.nav .active{
+	font-size: 0.4rem;
+	border-bottom:0.02rem solid #FF4258;
 }
 .nav>div:nth-of-type(6){
     margin-right:0.1rem;

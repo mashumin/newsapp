@@ -31,7 +31,7 @@
           
      </div>
      <div class="nav">
-            <div class="active"><a href="index1.html">推荐</a></div>
+            <div class="active"><a href="index.html">推荐</a></div>
             <div><a href="list.html">国内</a></div>
             <div><a href="list.html">国外</a></div>
             <div><a href="list.html">娱乐</a></div>
@@ -59,55 +59,3 @@
     	<input type="submit"  value="提交" name="but"/>
     </div>
 </div>
-    <div class="swiper-wrapper">
-        <div class="swiper-slide bj">
-            <div class="xiangq">
-                <div class="fanhui">
-                    <a href="list.html"><div class="iconfont icon-fanhui"></div></a>
-                </div>
-                <div class="xiangcun"></div>
-                <div class="neirong">
-                    <h3>乡村教师守护小学32年 如今学校只剩5个娃</h3>
-                    <p>雷士进今年57岁，1984年，他来到安徽省亳州市谯城区十九里镇姜屯行政村的姜屯小学当起了一名乡村教师。“学校最高峰的时候发展到500多人，可现在只有5个学生，4位老师。”雷士进说，由于城市发展，现在的姜屯地处城乡结合处，大多数人都进城务工，顺道也会带孩子外出读书，还有一部分会选择把孩子送进私立学校，所以导致学生数量锐减。（来源：亳州新报）</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
-<script>
-    function size(origin,type){
-        var type=type || "x";
-        if(type=="x"){
-            var widths=document.documentElement.clientWidth;
-            var sizes=widths/origin*100;
-        }else if(type=="y"){
-            var heights=document.documentElement.clientHeight;
-            var sizes=heights/origin*100;
-        }
-        document.getElementsByTagName("html")[0].style.fontSize=sizes+"px";
-
-    }
-    window.onload=function(){
-        size(750);
-        
-        $(".caid").click(function(){
-        	$(this).css("display","none");
-        	$(".guan").css("display","block");
-        	$(".xiala").css("display","block")
-        })
-        $(".guan").click(function(){
-        	$(".caid").css("display","block");
-        	$(".guan").css("display","none");
-        	$(".xiala").css("display","none")
-        })
-        $(".nav>div").click(function(){
-        	var index=$(this).index();
-        	$(".nav>div").removeClass("active").eq(index).addClass("active")
-        })
-    }
-    var mySwiper = new Swiper ('.swiper-container', {
-        pagination: '.swiper-pagination',
-    })
-</script>
-</html>
